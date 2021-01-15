@@ -1,0 +1,17 @@
+//
+//  Mock.xcconfig
+//  TMDB
+//
+//  Created by Jose Ponciano López Romero on 1/14/21.
+//  Copyright © 2021 JoseLR. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ROOT_URL = https:/$()/localhost
+
+// App Settings
+APP_NAME = TMDB (Mock)
+APP_BUNDLE_ID = com.jlr.mock.TMDB
+ENV_MOCK = true
