@@ -8,13 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		3D98ADE225B130F50006D961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98ADE125B130F50006D961 /* AppDelegate.swift */; };
-		3D98ADE425B130F50006D961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98ADE325B130F50006D961 /* ViewController.swift */; };
 		3D98ADE725B130F50006D961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D98ADE525B130F50006D961 /* Main.storyboard */; };
 		3D98ADE925B130F70006D961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D98ADE825B130F70006D961 /* Assets.xcassets */; };
 		3D98ADEC25B130F70006D961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D98ADEA25B130F70006D961 /* LaunchScreen.storyboard */; };
 		3D98ADF725B130F70006D961 /* TMDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98ADF625B130F70006D961 /* TMDBTests.swift */; };
 		3D98AE0225B130F70006D961 /* TMDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE0125B130F70006D961 /* TMDBUITests.swift */; };
 		3D98AE1825B133A10006D961 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE1725B133A10006D961 /* Environment.swift */; };
+		3D98AE2225B139E90006D961 /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE2125B139E90006D961 /* NetworkProtocols.swift */; };
+		3D98AE2425B139F90006D961 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE2325B139F90006D961 /* Request.swift */; };
+		3D98AE2625B13A120006D961 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE2525B13A120006D961 /* NetworkDispatcher.swift */; };
+		3D98AE2825B13A210006D961 /* MockNetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE2725B13A210006D961 /* MockNetworkDispatcher.swift */; };
+		3D98AE2A25B13A870006D961 /* ServiceEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE2925B13A870006D961 /* ServiceEndpoints.swift */; };
+		3D98AE2C25B13B080006D961 /* MealsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE2B25B13B080006D961 /* MealsServices.swift */; };
+		3D98AE3125B13B710006D961 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE3025B13B710006D961 /* Meal.swift */; };
+		3D98AE3325B13BB90006D961 /* UIViewControllerWithLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE3225B13BB90006D961 /* UIViewControllerWithLoader.swift */; };
+		3D98AE3525B13C1B0006D961 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE3425B13C1B0006D961 /* Loader.swift */; };
+		3D98AE3725B13C5E0006D961 /* MealsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE3625B13C5E0006D961 /* MealsListPresenter.swift */; };
+		3D98AE3925B13C730006D961 /* MealsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE3825B13C730006D961 /* MealsListViewController.swift */; };
+		3D98AE3B25B13C830006D961 /* MealViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE3A25B13C830006D961 /* MealViewCell.swift */; };
+		3D98AE3D25B13C940006D961 /* MealDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE3C25B13C940006D961 /* MealDetailPresenter.swift */; };
+		3D98AE3F25B13CA40006D961 /* MealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE3E25B13CA40006D961 /* MealDetailViewController.swift */; };
+		3D98AE4125B13D890006D961 /* CachedImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98AE4025B13D890006D961 /* CachedImageHelper.swift */; };
+		3D98AE4525B14C0D0006D961 /* Mock_MealDetail.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D98AE4325B14C0D0006D961 /* Mock_MealDetail.json */; };
+		3D98AE4625B14C0D0006D961 /* Mock_AllMeals.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D98AE4425B14C0D0006D961 /* Mock_AllMeals.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +53,6 @@
 /* Begin PBXFileReference section */
 		3D98ADDE25B130F50006D961 /* TMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D98ADE125B130F50006D961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D98ADE325B130F50006D961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D98ADE625B130F50006D961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D98ADE825B130F70006D961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D98ADEB25B130F70006D961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +66,23 @@
 		3D98AE1525B132700006D961 /* Mock.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Mock.xcconfig; sourceTree = "<group>"; };
 		3D98AE1625B132970006D961 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 		3D98AE1725B133A10006D961 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3D98AE2125B139E90006D961 /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		3D98AE2325B139F90006D961 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		3D98AE2525B13A120006D961 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		3D98AE2725B13A210006D961 /* MockNetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkDispatcher.swift; sourceTree = "<group>"; };
+		3D98AE2925B13A870006D961 /* ServiceEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceEndpoints.swift; sourceTree = "<group>"; };
+		3D98AE2B25B13B080006D961 /* MealsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsServices.swift; sourceTree = "<group>"; };
+		3D98AE3025B13B710006D961 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		3D98AE3225B13BB90006D961 /* UIViewControllerWithLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerWithLoader.swift; sourceTree = "<group>"; };
+		3D98AE3425B13C1B0006D961 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		3D98AE3625B13C5E0006D961 /* MealsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListPresenter.swift; sourceTree = "<group>"; };
+		3D98AE3825B13C730006D961 /* MealsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsListViewController.swift; sourceTree = "<group>"; };
+		3D98AE3A25B13C830006D961 /* MealViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewCell.swift; sourceTree = "<group>"; };
+		3D98AE3C25B13C940006D961 /* MealDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailPresenter.swift; sourceTree = "<group>"; };
+		3D98AE3E25B13CA40006D961 /* MealDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewController.swift; sourceTree = "<group>"; };
+		3D98AE4025B13D890006D961 /* CachedImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageHelper.swift; sourceTree = "<group>"; };
+		3D98AE4325B14C0D0006D961 /* Mock_MealDetail.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mock_MealDetail.json; sourceTree = "<group>"; };
+		3D98AE4425B14C0D0006D961 /* Mock_AllMeals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Mock_AllMeals.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +133,12 @@
 		3D98ADE025B130F50006D961 /* TMDB */ = {
 			isa = PBXGroup;
 			children = (
-				3D98AE1025B131900006D961 /* Config */,
 				3D98ADE125B130F50006D961 /* AppDelegate.swift */,
-				3D98ADE325B130F50006D961 /* ViewController.swift */,
+				3D98AE1E25B139B90006D961 /* App */,
+				3D98AE1F25B139B90006D961 /* Network */,
+				3D98AE1D25B139B90006D961 /* Services */,
+				3D98AE2025B139B90006D961 /* Utils */,
+				3D98AE1025B131900006D961 /* Config */,
 				3D98AE0F25B1314B0006D961 /* Resources */,
 				3D98ADED25B130F70006D961 /* Info.plist */,
 			);
@@ -131,6 +166,7 @@
 		3D98AE0F25B1314B0006D961 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D98AE4225B14C0D0006D961 /* Mocks */,
 				3D98ADE525B130F50006D961 /* Main.storyboard */,
 				3D98ADE825B130F70006D961 /* Assets.xcassets */,
 				3D98ADEA25B130F70006D961 /* LaunchScreen.storyboard */,
@@ -146,6 +182,82 @@
 				3D98AE1725B133A10006D961 /* Environment.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		3D98AE1D25B139B90006D961 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3D98AE2925B13A870006D961 /* ServiceEndpoints.swift */,
+				3D98AE2B25B13B080006D961 /* MealsServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3D98AE1E25B139B90006D961 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D98AE2E25B13B520006D961 /* Models */,
+				3D98AE2F25B13B520006D961 /* Loader */,
+				3D98AE2D25B13B520006D961 /* Meals */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3D98AE1F25B139B90006D961 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3D98AE2125B139E90006D961 /* NetworkProtocols.swift */,
+				3D98AE2325B139F90006D961 /* Request.swift */,
+				3D98AE2525B13A120006D961 /* NetworkDispatcher.swift */,
+				3D98AE2725B13A210006D961 /* MockNetworkDispatcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3D98AE2025B139B90006D961 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D98AE4025B13D890006D961 /* CachedImageHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3D98AE2D25B13B520006D961 /* Meals */ = {
+			isa = PBXGroup;
+			children = (
+				3D98AE3625B13C5E0006D961 /* MealsListPresenter.swift */,
+				3D98AE3825B13C730006D961 /* MealsListViewController.swift */,
+				3D98AE3A25B13C830006D961 /* MealViewCell.swift */,
+				3D98AE3C25B13C940006D961 /* MealDetailPresenter.swift */,
+				3D98AE3E25B13CA40006D961 /* MealDetailViewController.swift */,
+			);
+			path = Meals;
+			sourceTree = "<group>";
+		};
+		3D98AE2E25B13B520006D961 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D98AE3025B13B710006D961 /* Meal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D98AE2F25B13B520006D961 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				3D98AE3425B13C1B0006D961 /* Loader.swift */,
+				3D98AE3225B13BB90006D961 /* UIViewControllerWithLoader.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		3D98AE4225B14C0D0006D961 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3D98AE4325B14C0D0006D961 /* Mock_MealDetail.json */,
+				3D98AE4425B14C0D0006D961 /* Mock_AllMeals.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,8 +365,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D98ADEC25B130F70006D961 /* LaunchScreen.storyboard in Resources */,
+				3D98AE4625B14C0D0006D961 /* Mock_AllMeals.json in Resources */,
 				3D98ADE925B130F70006D961 /* Assets.xcassets in Resources */,
 				3D98ADE725B130F50006D961 /* Main.storyboard in Resources */,
+				3D98AE4525B14C0D0006D961 /* Mock_MealDetail.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,9 +393,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D98ADE425B130F50006D961 /* ViewController.swift in Sources */,
+				3D98AE3D25B13C940006D961 /* MealDetailPresenter.swift in Sources */,
+				3D98AE2225B139E90006D961 /* NetworkProtocols.swift in Sources */,
+				3D98AE3925B13C730006D961 /* MealsListViewController.swift in Sources */,
+				3D98AE3725B13C5E0006D961 /* MealsListPresenter.swift in Sources */,
+				3D98AE2825B13A210006D961 /* MockNetworkDispatcher.swift in Sources */,
+				3D98AE2425B139F90006D961 /* Request.swift in Sources */,
 				3D98AE1825B133A10006D961 /* Environment.swift in Sources */,
+				3D98AE3325B13BB90006D961 /* UIViewControllerWithLoader.swift in Sources */,
+				3D98AE3125B13B710006D961 /* Meal.swift in Sources */,
+				3D98AE2C25B13B080006D961 /* MealsServices.swift in Sources */,
+				3D98AE3F25B13CA40006D961 /* MealDetailViewController.swift in Sources */,
+				3D98AE2625B13A120006D961 /* NetworkDispatcher.swift in Sources */,
 				3D98ADE225B130F50006D961 /* AppDelegate.swift in Sources */,
+				3D98AE3525B13C1B0006D961 /* Loader.swift in Sources */,
+				3D98AE2A25B13A870006D961 /* ServiceEndpoints.swift in Sources */,
+				3D98AE3B25B13C830006D961 /* MealViewCell.swift in Sources */,
+				3D98AE4125B13D890006D961 /* CachedImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
